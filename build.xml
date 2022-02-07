@@ -56,7 +56,7 @@
   <!-- ivy properties used -->
   <property name="ivy.settings.dir" value="${basedir}/ivy" />
   <property name="ivy.pom.url"
-      value="http://www.couchbase.org/code/couchbase/java" />
+      value="https://www.couchbase.org/code/couchbase/java" />
   <property name="ivy.pom.groupId" value="net.spy" />
   <property name="ivy.pom.description"
    value = "A client library for memcached."/>
@@ -99,9 +99,9 @@
   <loadproperties srcfile="${ivy.dir}/libraries.properties"/>
   <property name="ivy.jar" location="${lib.dir}/ivy-${ivy.version}.jar"/>
   <property name="ivy_repo_url"
-      value="http://repo2.maven.org/maven2/org/apache/ivy/ivy/${ivy.version}/ivy-${ivy.version}.jar" />
+      value="https://repo1.maven.org/maven2/org/apache/ivy/ivy/${ivy.version}/ivy-${ivy.version}.jar" />
   <property name="mvn_repo_url"
-      value="http://repo2.maven.org/maven2/org/apache/maven/maven-ant-tasks/${mvn.version}/maven-ant-tasks-${mvn.version}.jar"/>
+      value="https://repo1.maven.org/maven2/org/apache/maven/maven-ant-tasks/${mvn.version}/maven-ant-tasks-${mvn.version}.jar"/>
   <property name="mvn.jar" location="${build.dir}/maven-ant-tasks-${mvn.version}.jar" />
   <property name="build.ivy.dir" location="${build.dir}/ivy" />
   <property name="build.ivy.lib.dir" location="${build.ivy.dir}/lib" />
@@ -291,8 +291,8 @@
         destdir="${build.test.classes}"
         debug="${javac.debug}"
         includeantruntime="false"
-        target="1.6"
-        source="1.6">
+        target="11"
+        source="11">
       <classpath>
         <path refid="test.classpath"/>
       </classpath>
@@ -401,8 +401,8 @@
         debug="${javac.debug}"
         deprecation="${javac.deprecation}"
         includeantruntime="false"
-        target="1.6"
-        source="1.6">
+        target="11"
+        source="11">
       <classpath refid="${name}.common.classpath" />
     </javac>
 
@@ -414,8 +414,8 @@
         debug="${javac.debug}"
         deprecation="${javac.deprecation}"
         includeantruntime="false"
-        target="1.6"
-        source="1.6">
+        target="11"
+        source="11">
       <classpath refid="${name}.common.classpath"/>
     </javac>
     <move file="${build.src.dir}/net/spy/memcached/changelog.txt"
