@@ -28,9 +28,9 @@
         </license>
     </licenses>
     <scm>
-        <url>https://github.com/couchbase/spymemcached</url>
+        <url>https://github.com/murasoftware/spymemcached</url>
         <connection>
-            scm:git:git://github.com/couchbase/spymemcached.git
+            scm:git:git://github.com/murasoftware/spymemcached.git
         </connection>
     </scm>
     <developers>
